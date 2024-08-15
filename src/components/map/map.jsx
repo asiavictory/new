@@ -31,7 +31,7 @@ const Map = () => {
         <h3>ABOUT US</h3>
         <div className="mapCon">
         <div className="mapImg"><img src={mapHP} alt=""/></div>
-        <div className="mapAdd">
+        {/* <div className="mapAdd"> */}
             <div className="mapTitle">
                {/* {data[0]?.content} */}
             <b>ASEAN VICTORY EXIM COMMERCIAL CO., LTD</b><br/>
@@ -42,7 +42,7 @@ const Map = () => {
             Fax: 84-353-840017 <br/>
             </div>
         </div>
-        </div>
+        {/* </div> */}
      </div>
      
     );
