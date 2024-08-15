@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/new/static/css/main.677153db.css",
-    "main.js": "/new/static/js/main.3aa2593f.js",
+    "main.css": "/new/static/css/main.4bf1e11d.css",
+    "main.js": "/new/static/js/main.e64d7915.js",
     "static/js/453.60ad7e82.chunk.js": "/new/static/js/453.60ad7e82.chunk.js",
     "static/media/Air-freight-vs.-Sea-Freight.png": "/new/static/media/Air-freight-vs.-Sea-Freight.e4d31b3b99a625e6b3a5.png",
     "static/media/agriculture.png": "/new/static/media/agriculture.6a79c0054aa3b400a048.png",
@@ -11,12 +11,12 @@
     "static/media/map.png": "/new/static/media/map.d038a75e3ba1dc015c76.png",
     "static/media/market.png": "/new/static/media/market.97ba1748ce223bbf9336.png",
     "index.html": "/new/index.html",
-    "main.677153db.css.map": "/new/static/css/main.677153db.css.map",
-    "main.3aa2593f.js.map": "/new/static/js/main.3aa2593f.js.map",
+    "main.4bf1e11d.css.map": "/new/static/css/main.4bf1e11d.css.map",
+    "main.e64d7915.js.map": "/new/static/js/main.e64d7915.js.map",
     "453.60ad7e82.chunk.js.map": "/new/static/js/453.60ad7e82.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.677153db.css",
-    "static/js/main.3aa2593f.js"
+    "static/css/main.4bf1e11d.css",
+    "static/js/main.e64d7915.js"
   ]
 }
