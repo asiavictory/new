@@ -1,42 +1,44 @@
-import {useState, useEffect} from "react";
-import { useNavigate } from "react-router-dom";
-// import Image4 from "../../../image/market.png";
+// import {useState, useEffect} from "react";
+// import { useNavigate } from "react-router-dom";
+import Image4 from "../../../image/market.png";
 import "../content2/content2.css";
 
 const Content2 = () => {
-  const [data, setData] = useState([]);
+  // const [data, setData] = useState([]);
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
-  useEffect(() => {
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   fetchData();
+  // }, []);
 
-  const fetchData = async () => {
-    const requestOptions = {
-      method: "GET",
-      redirect: "follow",
-    };
+  // const fetchData = async () => {
+  //   const requestOptions = {
+  //     method: "GET",
+  //     redirect: "follow",
+  //   };
 
-    await fetch(
-      "http://localhost:5000/getDataByDate?title=Market Research",
-      requestOptions
-    )
-      .then((response) => response.text())
-      .then((result) => {
-        setData(JSON.parse(result));
-      })
-      .catch((error) => console.error(error));
-  };
+  //   await fetch(
+  //     "http://localhost:5000/getDataByDate?title=Market Research",
+  //     requestOptions
+  //   )
+  //     .then((response) => response.text())
+  //     .then((result) => {
+  //       setData(JSON.parse(result));
+  //     })
+  //     .catch((error) => console.error(error));
+  // };
 
   return (
     <div className="content2">
-      <h3 onClick={() => {navigate("/market")}}>MARKET RESEARCH AND DATA ANALYSIS</h3>
-      {data && <div className="cont2Pra">
+      <h3>MARKET RESEARCH AND DATA ANALYSIS</h3>
+      {/* {data &&  */}
+      <div className="cont2Pra">
         <div className="cont2All"> 
-          <h4>{data[0]?.title}</h4>
-          <div>{data[0]?.content}</div>
-          {/* Market research blends consumer behavior and economic trends to
+          <h4>Market research blends consumer behavior and economic trends to
+          confirm and improve your business idea</h4>
+          <div>
+          Market research blends consumer behavior and economic trends to
           confirm and improve your business idea. It’s crucial to understand
           your consumer base from the outset. Market research lets you reduce
           risks even while your business is still just a gleam in your eye.
@@ -60,13 +62,14 @@ const Content2 = () => {
           general and quantifiable, like industry trends, demographics, and
           household incomes. Check online or start with our list of market
           research resources.
-          <br /> */}
-        </div>
+          <br />
+          </div>
+          </div>
         <div className="imgCo2">
-          <img src={data[0]?.image} alt="" />
+          <img src={Image4} alt="" />
         </div>
-      </div>}
-    </div>
+        </div>
+      </div>
   );
 };
 export default Content2;

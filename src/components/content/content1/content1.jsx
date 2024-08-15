@@ -1,51 +1,55 @@
-import { useEffect, useState } from "react";
-import {useNavigate} from "react-router-dom";
-
+// import { useEffect, useState } from "react";
+// import {useNavigate} from "react-router-dom";
+import Image1 from "../../../image/agriculture.png";
 import "./content1.css";
 
 const Content1 = () => {
-  const [data, setData] = useState([]);
-  const navigate = useNavigate();
+  // const [data, setData] = useState([]);
+  // const navigate = useNavigate();
 
-  useEffect(() => {
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   fetchData();
+  // }, []);
 
-  const fetchData = async () => {
-    const requestOptions = {
-      method: "GET",
-      redirect: "follow",
-    };
+  // const fetchData = async () => {
+  //   const requestOptions = {
+  //     method: "GET",
+  //     redirect: "follow",
+  //   };
 
-    await fetch(
-      "http://localhost:5000/getDataByDate?title=Agricultural Products",
-      requestOptions
-    )
-      .then((response) => response.text())
-      .then((result) => {
-        setData(JSON.parse(result));
-      })
-      .catch((error) => console.error(error));
-  };
+  //   await fetch(
+  //     "http://localhost:5000/getDataByDate?title=Agricultural Products",
+  //     requestOptions
+  //   )
+  //     .then((response) => response.text())
+  //     .then((result) => {
+  //       setData(JSON.parse(result));
+  //     })
+  //     .catch((error) => console.error(error));
+  // };
 
   // console.log("data", data);
   // console.log("data", data[0].time)
 
   return (
     <div className="content1">
-      <h3 onClick={()=> {navigate("/agricultural")}} >AGRICULTURAL PRODUCTS</h3>
-      {data && <div className="contPra">
+      <h3>AGRICULTURAL PRODUCTS</h3>
+      <div className="contPra">
+        {/* {data && <div className="contPra">
         <div className="imgCo1">
           <img src={data[0]?.image} alt="" />
         </div>
         <div className="contAll">
         <h4>{data[0]?.title}</h4>
           <div className="mainCon">{data[0]?.content}</div>
-        </div>
-        {/* <div className="imgCo1">
+        </div> */}
+        <div className="imgCo1">
           <img src={Image1} alt="" />
         </div>
         <div className="contAll">
+          <h4>
+            According to the Ministry of Agriculture and Rural Development
+          </h4>
           According to the Ministry of Agriculture and Rural Development, the
           total export turnover of agriculture, forestry and fisheries of the
           whole country was estimated at 38.48 billion USD, in the first nine
@@ -67,25 +71,27 @@ const Content1 = () => {
           Industry and Trade, fruit and vegetable exports recorded high growth
           rates in most commodity categories, in the first nine months of 2023.
           It is expected that in the whole year, fruit and vegetable export
-          turnover may exceed 5 billion USD. <br />Typically, the export value of
-          durian increased sharply and was continuously recorded at a high
-          level. In the first eight months of 2023 alone, durian export value
-          reached 1.28 billion USD, an increase of 708.4% over the same period
-          in 2022. China is the main durian import market of Vietnam. General
-          Secretary of the Vietnam Fruit and Vegetables Association Dang Phuc
-          Nguyen said that under market signals, durian export prices and output
-          will continue to increase in the near future because China's consumer
-          demand is still forecast to remain at a sharp increase. <br /> Regarding international cooperation and market development to
-          promote general consumption of agricultural products, Deputy Minister
-          of Agriculture and Rural Development Phung Duc Tien noted that in the
-          near future, the ministry will continue to handle market issues to
-          create favourable conditions for agricultural exports, especially to
-          the markets of China, the US and the EU. In particular, it is crucial
-          to take advantage of free trade agreements to promote the export of
-          key agricultural, forestry and fishery products, as well as support
-          businesses in signing new export orders.<br />
-        </div> */}
-      </div>}
+          turnover may exceed 5 billion USD. <br />
+          Typically, the export value of durian increased sharply and was
+          continuously recorded at a high level. In the first eight months of
+          2023 alone, durian export value reached 1.28 billion USD, an increase
+          of 708.4% over the same period in 2022. China is the main durian
+          import market of Vietnam. General Secretary of the Vietnam Fruit and
+          Vegetables Association Dang Phuc Nguyen said that under market
+          signals, durian export prices and output will continue to increase in
+          the near future because China's consumer demand is still forecast to
+          remain at a sharp increase. <br /> Regarding international cooperation
+          and market development to promote general consumption of agricultural
+          products, Deputy Minister of Agriculture and Rural Development Phung
+          Duc Tien noted that in the near future, the ministry will continue to
+          handle market issues to create favourable conditions for agricultural
+          exports, especially to the markets of China, the US and the EU. In
+          particular, it is crucial to take advantage of free trade agreements
+          to promote the export of key agricultural, forestry and fishery
+          products, as well as support businesses in signing new export orders.
+          <br />
+        </div>
+      </div>
     </div>
   );
 };

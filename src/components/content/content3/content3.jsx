@@ -1,44 +1,46 @@
-import {useState, useEffect} from "react";
-import {useNavigate} from "react-router-dom";
-// import Image3 from "../../../image/frozen.png";
+// import {useState, useEffect} from "react";
+// import {useNavigate} from "react-router-dom";
+import Image3 from "../../../image/frozen.png";
 import "./content3.css";
 
 const Content3 = () => {
-  const [data, setData] = useState([]);
+  // const [data, setData] = useState([]);
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
-  useEffect(() => {
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   fetchData();
+  // }, []);
 
-  const fetchData = async () => {
-    const requestOptions = {
-      method: "GET",
-      redirect: "follow",
-    };
+  // const fetchData = async () => {
+  //   const requestOptions = {
+  //     method: "GET",
+  //     redirect: "follow",
+  //   };
 
-    await fetch(
-      "http://localhost:5000/getDataByDate?title=Frozen Foods",
-      requestOptions
-    )
-      .then((response) => response.text())
-      .then((result) => {
-        setData(JSON.parse(result));
-      })
-      .catch((error) => console.error(error));
-  };
+  //   await fetch(
+  //     "http://localhost:5000/getDataByDate?title=Frozen Foods",
+  //     requestOptions
+  //   )
+  //     .then((response) => response.text())
+  //     .then((result) => {
+  //       setData(JSON.parse(result));
+  //     })
+  //     .catch((error) => console.error(error));
+  // };
   return (
     <div className="content3">
-      <h3 onClick={()=>{navigate("/frozenfood")}}>FROZEN FOODS</h3>
-     {data && <div className="contPra3">
+      <h3>FROZEN FOODS</h3>
+     {/* {data &&  */}
+     <div className="contPra3">
         <div className="imgCo3">
-          <img src={data[0]?.image} alt="" />
+          <img src={Image3} alt="" />
         </div>
         <div className="cont3All"> 
-          <h4>{data[0]?.title}</h4>
-          <div>{data[0]?.content}</div>
-          {/* Frozen foods are food items preserved through freezing and stored in a
+          <h4> Frozen foods are food items preserved through freezing and stored in a
+          freezer until preparation.</h4>
+          <div>
+          Frozen foods are food items preserved through freezing and stored in a
           freezer until preparation. <br/>Primary types of frozen foods include
           frozen fruit, juice, vegetables, and specialty frozen foods. Frozen
           fruits, harvested at peak ripeness, are rapidly frozen and packaged in
@@ -54,9 +56,10 @@ const Content3 = () => {
           effective marketing campaigns, the appeal of convenience and
           time-saving attributes, evolving consumer lifestyles, and innovations
           in product varieties within the frozen food industry.
-          <br /> */}
+          <br />
+          </div>
         </div>
-      </div>}
+      </div>
     </div>
   );
 };
