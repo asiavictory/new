@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {
+	BrowserRouter,
+	Routes,
+	Route,
+} from "react-router-dom";
+
+import Main from './pages/main/main';
+import Admin from './components/admin/admin';
+import Agricultural from "./pages/agricultural/agricultural";
+import Natural from "./pages/natural/natural";
+import FrozenFood from "./pages/frozen/frozenfood";
+import Market from "./pages/market/market";
+import Technology from "./pages/technology/technology"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<BrowserRouter>
+			<Routes>
+				<Route path="/" element={<Main />} />	
+				<Route path="/admin" element={<Admin/>}/>
+				<Route path="/agricultural" element={<Agricultural />} />	
+				<Route path="/natural" element={<Natural />} />	
+				<Route path="/frozenfood" element={<FrozenFood />} />
+				<Route path="/market" element={<Market />} />	
+				<Route path="/technology" element={<Technology />} />	
+			</Routes>
+		</BrowserRouter>
+	);
 }
 
 export default App;
