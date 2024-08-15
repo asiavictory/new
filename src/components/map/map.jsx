@@ -34,7 +34,7 @@ const Map = () => {
         <div className="mapAdd">
             <div className="mapTitles">
                {/* {data[0]?.content} */}
-            <b>ASEAN VICTORY EXIM COMMERCIAL CO., LTD</b><br/>
+            <b>ASIA VICTORY EXIM COMMERCIAL CO., LTD</b><br/>
             Office 1: 8 No Chocon street, Lechan district, Haiphong city, Vietnam.<br/>
             Office 2: Anlu, Thuynguyen, Haiphong, Vietnam. <br/>
             Email: mranhvuhp@gmail.com, anhvnfx18783@funix.edu.vn <br/>
