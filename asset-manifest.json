@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/new/static/css/main.f855e6bc.css",
-    "main.js": "/new/static/js/main.61e2f9e1.js",
+    "main.css": "/new/static/css/main.f890fed2.css",
+    "main.js": "/new/static/js/main.710ef50d.js",
     "static/js/453.60ad7e82.chunk.js": "/new/static/js/453.60ad7e82.chunk.js",
-    "static/media/logo.svg": "/new/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/Air-freight-vs.-Sea-Freight.png": "/new/static/media/Air-freight-vs.-Sea-Freight.e4d31b3b99a625e6b3a5.png",
+    "static/media/map.png": "/new/static/media/map.d038a75e3ba1dc015c76.png",
     "index.html": "/new/index.html",
-    "main.f855e6bc.css.map": "/new/static/css/main.f855e6bc.css.map",
-    "main.61e2f9e1.js.map": "/new/static/js/main.61e2f9e1.js.map",
+    "main.f890fed2.css.map": "/new/static/css/main.f890fed2.css.map",
+    "main.710ef50d.js.map": "/new/static/js/main.710ef50d.js.map",
     "453.60ad7e82.chunk.js.map": "/new/static/js/453.60ad7e82.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.61e2f9e1.js"
+    "static/css/main.f890fed2.css",
+    "static/js/main.710ef50d.js"
   ]
 }
