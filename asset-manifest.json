@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/new/static/css/main.f890fed2.css",
-    "main.js": "/new/static/js/main.fb67873d.js",
+    "main.js": "/new/static/js/main.1dbbd703.js",
     "static/js/453.60ad7e82.chunk.js": "/new/static/js/453.60ad7e82.chunk.js",
     "static/media/Air-freight-vs.-Sea-Freight.png": "/new/static/media/Air-freight-vs.-Sea-Freight.e4d31b3b99a625e6b3a5.png",
     "static/media/agriculture.png": "/new/static/media/agriculture.6a79c0054aa3b400a048.png",
@@ -12,11 +12,11 @@
     "static/media/market.png": "/new/static/media/market.97ba1748ce223bbf9336.png",
     "index.html": "/new/index.html",
     "main.f890fed2.css.map": "/new/static/css/main.f890fed2.css.map",
-    "main.fb67873d.js.map": "/new/static/js/main.fb67873d.js.map",
+    "main.1dbbd703.js.map": "/new/static/js/main.1dbbd703.js.map",
     "453.60ad7e82.chunk.js.map": "/new/static/js/453.60ad7e82.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f890fed2.css",
-    "static/js/main.fb67873d.js"
+    "static/js/main.1dbbd703.js"
   ]
 }
